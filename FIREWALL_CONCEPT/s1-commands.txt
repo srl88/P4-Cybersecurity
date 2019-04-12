@@ -1,0 +1,6 @@
+table_set_default simple_forward drop
+table_add simple_forward l3 10.0.1.1 => 00:00:00:00:01:00 1 500 1000000 0 10
+table_add simple_forward l3 10.0.1.2 => 00:00:00:00:01:00 2 500 1000000 1 10
+
+table_set_default drop_it NoAction
+table_add drop_it drop 1 =>
