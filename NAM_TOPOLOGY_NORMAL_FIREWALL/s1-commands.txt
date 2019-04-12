@@ -1,0 +1,29 @@
+table_set_default ipv4_lpm drop
+table_add ipv4_lpm ipv4_exit 10.0.1.1 =>  00:00:00:00:01:01 1 500 1000000 0 100
+table_add ipv4_lpm ipv4_forward 10.0.2.2 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.6.6 => 00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.3.3 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.4.4 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.5.5 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.7.7 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.8.8 => 00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.9.9 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.10.10 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.11.11 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.12.12 =>   00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.13.13 =>   00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.14.14 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.15.15 =>   00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.16.16 =>   00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.17.17 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.18.18 =>   00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.19.19 =>   00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.20.20 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.21.21 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.22.22 =>  00:00:00:06:06:00 3
+table_add ipv4_lpm ipv4_forward 10.0.23.23 =>  00:00:00:02:02:00 2
+table_add ipv4_lpm ipv4_forward 10.0.24.24 =>  00:00:00:02:02:00 2
+
+table_set_default drop_it NoAction
+table_add drop_it drop 1 =>
+
