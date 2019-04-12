@@ -1,0 +1,4 @@
+table_set_default simple_forward drop
+table_add simple_forward l3 10.0.1.1 => 00:00:00:00:01:01 1
+table_add simple_forward l3 10.0.1.2 => 00:00:00:00:01:02 2
+
